@@ -206,7 +206,7 @@ function addModal (data, index) {
     const employeeName = document.querySelector("div.modal-container").querySelector("#name").textContent;
     const cardDivs = document.querySelectorAll("div.card");
 
-    //Array to store employee's that are currently displayed on the gallery.
+    //Array to store indices of employees that are currently displayed on the gallery.
     let indexArray = [];
 
     for (let i = 0; i < document.querySelectorAll("div.card").length; i++) {
