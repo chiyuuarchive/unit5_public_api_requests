@@ -292,11 +292,8 @@ setGalleryUp("https://randomuser.me/api/?results=12&nat=us");
 Styling the DOM
 ======================== */
 const headerPic = "https://picsum.photos/2500/400/";
-
 const backgroundImg = document.createElement("img");
 backgroundImg.style.width = "100%";
 backgroundImg.src = headerPic;
-
 header.appendChild(backgroundImg);
-
 document.querySelector("body").style.backgroundColor = "#ebf1fa";
