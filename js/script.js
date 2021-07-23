@@ -2,8 +2,10 @@
  * Project 5 - Public API Requests
  * script.js */
 
-// Removing HTML comments
 
+/* =======================
+Removing HTML comments
+======================== */
 /**
  * [Removes the HTML comments using regex and replace().]
  */
@@ -16,11 +18,15 @@ function removeComments() {
 // Call the function to remove the HTML comments
 removeComments();
 
-// DOM declarations
+
+/* =======================
+DOM declarations
+======================== */
 const header = document.querySelector("header");
 const searchDiv = document.querySelector(".search-container");
 const galleryDiv = document.querySelector(".gallery");
 const script = document.querySelector("script");
+
 
 /* =======================
 Response handling
@@ -38,6 +44,7 @@ function getEmployeeData (url) {
         .catch (error => console.log("Error:", error))   
 }
 
+
 /* =======================
 Error handling
 ======================== */
@@ -54,6 +61,7 @@ function checkStatus (response) {
         return Promise.reject(new Error(response.statusText));
     }
 }
+
 
 /* =======================
 Search Markup
