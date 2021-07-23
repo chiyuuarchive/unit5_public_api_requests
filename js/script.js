@@ -87,7 +87,7 @@ Gallery Markup
  * [Generate employee cards from the parsed JSON data with added search and modal window creation functionalities.]
  *
  * @param {object object} data: Object consisting of employees' personal informations.
- * @param {integer} index: each integer corresponds to a specific employee.
+ * @param {integer} index: Each integer corresponds to a specific employee.
  */
 function addCard (data, index) {
     const employeeInfo = data[index];
@@ -139,7 +139,7 @@ function addCard (data, index) {
 
     //Event handler - To bring up the modal window
     cardDiv.addEventListener("click", () => {
-        //Array to store employee's that are displayed on the gallery.
+        //Array to store indices of employees that are displayed on the gallery.
         let indexArray = [];
         addModal(data, index);
         for (let i = 0; i < document.querySelectorAll("div.card").length; i++) {
@@ -164,7 +164,7 @@ Modal Markup
  * [Generate modal window with data and indices passed from "addCard" function. Added button navigation functionalities]
  *
  * @param {object object} data: Object consisting of employees' personal informations.
- * @param {integer} index: each integer corresponds to a specific employee.
+ * @param {integer} index: Each integer corresponds to a specific employee.
  * 
  */
 function addModal (data, index) {
@@ -200,7 +200,7 @@ function addModal (data, index) {
         modalDiv.remove();
     });
 
-    //Event handlers - To navigate through modal windows with "Next" and "Prev" buttons
+    //Event handlers - To navigate through modal windows with "Next" and "Prev" buttons.
     const nextModal = document.querySelector("#modal-next");
     const prevModal = document.querySelector("#modal-prev");
     const employeeName = document.querySelector("div.modal-container").querySelector("#name").textContent;
@@ -219,7 +219,7 @@ function addModal (data, index) {
     nextModal.addEventListener("click", () => {
         for (let i = 0; i < indexArray.length; i++) {
             if (employeeName === cardDivs[indexArray[i]].querySelector("#name").textContent) {
-                //Next last card will prompt a modal window without button
+                //Next last card will prompt a modal window without the "Next" button.
                 if (index === indexArray[indexArray.length-2]) {
                     modalDiv.remove();
                     addModal(data, indexArray[i+1]);
