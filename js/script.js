@@ -296,4 +296,3 @@ const backgroundImg = document.createElement("img");
 backgroundImg.style.width = "100%";
 backgroundImg.src = "https://picsum.photos/2500/400/";
 header.appendChild(backgroundImg);
-
