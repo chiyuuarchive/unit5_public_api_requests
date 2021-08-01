@@ -1,7 +1,7 @@
 # Techdegree-project-5
  Public API Requests
 
-In this project, a random person generator and image generator API have been used to develop an employee directory. The javascript file "script.js" features asynchrounous JavaScript programming mostly concerning with handling of async operations with promises. 12 employees are randomely generated in this directory and the user are able to search and generate modal windows of selected employee.
+In this project, a random person generator and image generator API have been used to develop an employee directory. The javascript file "script.js" features asynchrounous JavaScript programming mostly concerning with handling of async operations with promises. 12 employees are randomely generated in this directory and the user are able to search and generate modal windows of a selected employee.
 
 For the "exceed expectations" grade, the background color of the webpage has been changed to a light blue color. In addition, a random image generator API (source: "https://picsum.photos/") has been utilized to decorate the header of the webpage.
 
